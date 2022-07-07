@@ -30,6 +30,10 @@ header .logo img{
     margin: 0 0 20px;
 }
 
+.home header ul{
+    display: none;
+}
+
 
 header .burger{
     text-align: center;
@@ -41,4 +45,25 @@ header .burger i{
     padding: 10px;
     border-radius: 6px;
     font-size: var(--titulares);
+}
+
+/* tablet */
+
+@media (min-width:461px) {
+    header .burger{
+        display: none;
+    }
+
+    .home header ul{
+        display: block;
+    }
+    
+
+
+}
+
+/* descktop */
+
+@media (min-width:769px) {
+
 }

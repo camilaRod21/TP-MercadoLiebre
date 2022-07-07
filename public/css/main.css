@@ -1,0 +1,81 @@
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section{
+    padding: 20px 0;
+}
+
+main section h2{
+    font-size: var(--titulares);
+    color: var(--colorGrisOscuro);
+}
+
+main section article{
+    margin: 10px 0 ;
+    background-color: white;
+}
+
+main section article .contenedor{
+    border-top: 1px solid var(--colorGrisClaro);
+    padding: 15px;
+}
+
+main section article .descuento,main section article .envio{
+    color: var(--colorVerde);
+}
+
+main .banner{
+    display: none;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article .envio i{
+    color: var(--colorVerde);
+    padding: 10px;
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    font-size: var(--cuerpo-de-texto);
+}
+
+main section article .precio{
+    font-size: var(--precios);
+}
+
+main section article .descuento{
+    font-size: var(--descuentosYDescripciones);
+}
+
+main section article h4{
+    color: var(--colorGrisOscuro);
+    font-size: var(--descuentosYDescripciones);
+    margin-top: 20px;
+}
+
+main section article h4{
+  display: none;
+}
+
+/* tablet */
+
+@media (min-width:461px) {
+    main section article h4{
+        display: block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px var(--colorGrisOscuro);
+    }
+
+
+}
+
+/* descktop */
+
+@media (min-width:769px) {
+
+}
