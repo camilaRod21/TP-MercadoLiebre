@@ -1,0 +1,44 @@
+header{
+    background-color: var(--colorAmarillo);
+    padding: 20px 0;
+    font-size: var(--cuerpo-de-texto);
+}
+
+header .logo,header .busqueda{
+    margin: 0 10px;
+}
+
+header .busqueda i{
+    padding: 1px;
+    background-color: white;
+    border: 1px solid var(--colorGrisClaro);
+    border-radius: 4px;
+}
+
+header p{
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header .logo img{
+    width: 45%;
+}
+
+
+.home header ul{
+    margin: 0 0 20px;
+}
+
+
+header .burger{
+    text-align: center;
+}
+
+header .burger i{
+    background-color: var(--colorCeleste);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: var(--titulares);
+}
