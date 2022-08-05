@@ -14,6 +14,17 @@ header .busqueda i{
     border: 1px solid var(--colorGrisClaro);
     border-radius: 4px;
 }
+header .busqueda{
+    /* padding: 8px; */
+    position: relative;
+    display: flex;
+    justify-content: end;
+    bottom: 2.8rem;
+    /* margin-left: 200px; */
+}
+header .busqueda input{
+    padding: 8px;
+}
 
 header p{
     font-size: 16px;
@@ -57,7 +68,6 @@ header .burger i{
     .home header ul{
         display: block;
     }
-    
 
 
 }
@@ -65,5 +75,31 @@ header .burger i{
 /* descktop */
 
 @media (min-width:769px) {
+    header .busqueda{
+        position: relative;
+        bottom: 3rem;
+        justify-content: center;
+    }
+    header .logo img{
+        width: 30%;
+    }
+    .home header p {
+        font-size: 14px;
+        position: relative;
+        text-align: end;
+        bottom: 6rem;
+      }
+      .home header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .home header nav ul{
+        margin: 0 auto;
+        font-size: 15px;
+        display: flex;
+    }
+    .home header nav li{
+        margin-right: 15px;
+    }
 
 }

@@ -1,40 +1,51 @@
-main{
+main {
     width: 90%;
     margin: 0 auto;
 }
 
-main section{
+main section {
     padding: 20px 0;
 }
 
-main section h2{
+main section h2 {
     font-size: var(--titulares);
     color: var(--colorGrisOscuro);
 }
 
-main section article{
-    margin: 10px 0 ;
+main h2 {
+    font-size: var(--titulares);
+    color: var(--colorGrisOscuro);
+}
+
+main section article {
+    margin: 10px 0;
     background-color: white;
 }
 
-main section article .contenedor{
+main section article .contenedor {
     border-top: 1px solid var(--colorGrisClaro);
     padding: 15px;
 }
 
-main section article .descuento,main section article .envio{
+main section article .descuento,
+main section article .envio {
     color: var(--colorVerde);
+    margin: 10px;
+    display: flex;
+    position: relative;
+    bottom: 40px;
+    justify-content: flex-end;
 }
 
-main .banner{
+main .banner {
     display: none;
 }
 
-main section article img{
+main section article img {
     width: 100%;
 }
 
-main section article .envio i{
+main section article .envio i {
     color: var(--colorVerde);
     padding: 10px;
     border: 1px solid var(--colorVerde);
@@ -42,40 +53,78 @@ main section article .envio i{
     font-size: var(--cuerpo-de-texto);
 }
 
-main section article .precio{
+main section article .precio {
     font-size: var(--precios);
+    margin-top: -50px;
 }
 
-main section article .descuento{
+main section article .descuento {
     font-size: var(--descuentosYDescripciones);
+    margin-right: 200px;
+    margin-top: 20px;
 }
 
-main section article h4{
+main section article.macbook .descuento {
+    margin-right: 180px;
+}
+
+main section article.samsung .descuento {
+    margin-right: 190px;
+}
+
+main section article h4 {
     color: var(--colorGrisOscuro);
     font-size: var(--descuentosYDescripciones);
     margin-top: 20px;
 }
 
-main section article h4{
-  display: none;
-}
 
 /* tablet */
 
 @media (min-width:461px) {
-    main section article h4{
+    main section article h4 {
         display: block;
     }
 
     main section article {
         box-shadow: 0px 0px 10px var(--colorGrisOscuro);
+        width: 48%;
     }
 
+    main section {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    main .banner {
+        display: block;
+    }
+
+    main .banner img {
+        width: 100%;
+    }
+
+    main section article .descuento {
+        display: contents;
+    }
 
 }
 
 /* descktop */
 
 @media (min-width:769px) {
+    main section {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    main section article {
+        width: 24%;
+
+    }
 
 }
